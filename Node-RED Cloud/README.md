@@ -1,6 +1,7 @@
 [Guide to get Node-RED on Cloud(FREE)](https://www.youtube.com/watch?v=TaVXyR4S2Qo)
 
 Location: Oracle Virtual cloud network
+
 Image: Oracle-Linux-7.9-2021.10.20-0
 
 Node-RED script installer (RPM based Linux ONLY)
