@@ -7,3 +7,6 @@ Follow this guide: https://console.hivemq.cloud/clients/arduino-esp8266?uuid=c68
 Install the ESP8266 Board for Arduino using this guide: http://arduino.esp8266.com/Arduino/versions/2.0.0/doc/installing.html
 
 OpenSLL configuration https://www.openssl.org
+
+## Data
+Contains the certificate needed to upload to hivemq with SSL
