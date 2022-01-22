@@ -5,6 +5,7 @@ We used influxdb cloud for our visualization as its free on the cloud for up to 
 
 ##Security
 InfluxDB cloud is secure as it has a token system and also [SSL](https://docs.influxdata.com/influxdb/v2.1/security/enable-tls/)
+
 ![image](https://user-images.githubusercontent.com/74981128/150627787-9d2fa4bb-8e19-4699-9829-d0dbc3ca2859.png)
 
 ## Sample Query
