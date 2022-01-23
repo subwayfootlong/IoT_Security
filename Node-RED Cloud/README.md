@@ -12,8 +12,13 @@ Node-RED script installer (RPM based Linux ONLY)
 
 [Securing node-red](https://nodered.org/docs/user-guide/runtime/securing-node-red#editor--admin-api-security)
 
-
-Steps taken to secure the vm:
-SSH key required to access VM
+## Security
+### Steps taken to secure the vm:
+- SSH key required to access VM
 ![image](https://user-images.githubusercontent.com/74981128/150664690-6329731f-f6e3-4614-bf25-96fd13d95c4e.png)
+- Block all ports except 1880
+### Steps taken to secure the Node-RED
+- Enable Username and Password
+![image](https://user-images.githubusercontent.com/74981128/150667335-0a77c411-fc9d-49d6-aad2-3031794464dd.png)
+
 
