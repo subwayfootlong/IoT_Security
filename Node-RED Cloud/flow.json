@@ -1,0 +1,536 @@
+[
+    {
+        "id": "119c5ba552020e2a",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "85a4d1f701af7fc6",
+        "type": "group",
+        "z": "119c5ba552020e2a",
+        "name": "Telegram handler",
+        "style": {
+            "label": true,
+            "fill": "#7fb7df",
+            "color": "#000000",
+            "stroke": "#000000"
+        },
+        "nodes": [
+            "37705ce142c0f3c5",
+            "a25cb298a8428917"
+        ],
+        "x": 434,
+        "y": 379,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "710fe2af1c405198",
+        "type": "group",
+        "z": "119c5ba552020e2a",
+        "name": "Spike Generator",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5f9e8da12479c51b",
+            "84d2f39b0d630c36",
+            "97e4d01d696e5830",
+            "d0f613ddc0388f7e",
+            "4e5c6f63cc623fba"
+        ],
+        "x": 894,
+        "y": 199,
+        "w": 352,
+        "h": 162
+    },
+    {
+        "id": "c12be15d72367cdb",
+        "type": "mqtt in",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "topic": "topic",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "d54a40aba0a56785",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66475a85a3e59302",
+        "type": "inject",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ABC",
+        "payloadType": "str",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "717ef2b2a0fd2045"
+            ]
+        ]
+    },
+    {
+        "id": "c50b98cff11c32ae",
+        "type": "inject",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "EFG",
+        "payloadType": "str",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "717ef2b2a0fd2045"
+            ]
+        ]
+    },
+    {
+        "id": "5f9e8da12479c51b",
+        "type": "delay",
+        "z": "119c5ba552020e2a",
+        "g": "710fe2af1c405198",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 980,
+        "y": 280,
+        "wires": [
+            [
+                "d0f613ddc0388f7e"
+            ]
+        ]
+    },
+    {
+        "id": "a258a8bca8a5573c",
+        "type": "change",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 260,
+        "wires": [
+            [
+                "5f9e8da12479c51b",
+                "84d2f39b0d630c36",
+                "97e4d01d696e5830"
+            ]
+        ]
+    },
+    {
+        "id": "37705ce142c0f3c5",
+        "type": "telegram sender",
+        "z": "119c5ba552020e2a",
+        "g": "85a4d1f701af7fc6",
+        "name": "",
+        "bot": "65103eab3bf5f377",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 810,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a25cb298a8428917",
+        "type": "function",
+        "z": "119c5ba552020e2a",
+        "g": "85a4d1f701af7fc6",
+        "name": "Declare Telegram Objects",
+        "func": "var temp=msg.payload\nmsg.payload={\n    content:\"Unknown Car at Gantry!\",\n    type:'message',\n    chatId:['669038186']\n   }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 420,
+        "wires": [
+            [
+                "37705ce142c0f3c5"
+            ]
+        ]
+    },
+    {
+        "id": "84d2f39b0d630c36",
+        "type": "delay",
+        "z": "119c5ba552020e2a",
+        "g": "710fe2af1c405198",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 980,
+        "y": 320,
+        "wires": [
+            [
+                "4e5c6f63cc623fba"
+            ]
+        ]
+    },
+    {
+        "id": "97e4d01d696e5830",
+        "type": "change",
+        "z": "119c5ba552020e2a",
+        "g": "710fe2af1c405198",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 240,
+        "wires": [
+            [
+                "184e935d47af34c6",
+                "d5328be1c6d13da5"
+            ]
+        ]
+    },
+    {
+        "id": "d0f613ddc0388f7e",
+        "type": "change",
+        "z": "119c5ba552020e2a",
+        "g": "710fe2af1c405198",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 280,
+        "wires": [
+            [
+                "d5328be1c6d13da5",
+                "184e935d47af34c6"
+            ]
+        ]
+    },
+    {
+        "id": "4e5c6f63cc623fba",
+        "type": "change",
+        "z": "119c5ba552020e2a",
+        "g": "710fe2af1c405198",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 320,
+        "wires": [
+            [
+                "d5328be1c6d13da5",
+                "184e935d47af34c6"
+            ]
+        ]
+    },
+    {
+        "id": "184e935d47af34c6",
+        "type": "debug",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "d5328be1c6d13da5",
+        "type": "influxdb out",
+        "z": "119c5ba552020e2a",
+        "influxdb": "a3dbbbcb7bce13b5",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "4df7d1b2e7d6e86c",
+        "bucket": "Carpark Monitoring System",
+        "x": 1550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "225020352950c7ec",
+        "type": "inject",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mak kau hijau",
+        "payloadType": "str",
+        "x": 90,
+        "y": 340,
+        "wires": [
+            [
+                "717ef2b2a0fd2045"
+            ]
+        ]
+    },
+    {
+        "id": "815f0f47e6d99620",
+        "type": "change",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Unknown Plate Number",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 300,
+        "wires": [
+            [
+                "a258a8bca8a5573c"
+            ]
+        ]
+    },
+    {
+        "id": "717ef2b2a0fd2045",
+        "type": "switch",
+        "z": "119c5ba552020e2a",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "ABC",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "EFG",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "HIJ",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "a258a8bca8a5573c"
+            ],
+            [
+                "a258a8bca8a5573c"
+            ],
+            [
+                "a258a8bca8a5573c"
+            ],
+            [
+                "815f0f47e6d99620",
+                "a25cb298a8428917"
+            ]
+        ]
+    },
+    {
+        "id": "d54a40aba0a56785",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c689cd9ab0cf406bbc142988277304d9.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "86941d32c6c0affc",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "65103eab3bf5f377",
+        "type": "telegram bot",
+        "botname": "CIOT BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "a3dbbbcb7bce13b5",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "86941d32c6c0affc",
+        "influxdbVersion": "2.0",
+        "url": "https://ap-southeast-2-1.aws.cloud2.influxdata.com",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "86941d32c6c0affc",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    }
+]
