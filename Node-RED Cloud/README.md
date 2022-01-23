@@ -11,5 +11,9 @@ Node-RED script installer (RPM based Linux ONLY)
 [Starting Node-RED on boot](https://nodered.org/docs/faq/starting-node-red-on-boot#rpm-based-linux-redhat-fedora-centos)
 
 [Securing node-red](https://nodered.org/docs/user-guide/runtime/securing-node-red#editor--admin-api-security)
-What i did: username and password authentication for the admin console.
+
+
+Steps taken to secure the vm:
+SSH key required to access VM
+![image](https://user-images.githubusercontent.com/74981128/150664690-6329731f-f6e3-4614-bf25-96fd13d95c4e.png)
 
