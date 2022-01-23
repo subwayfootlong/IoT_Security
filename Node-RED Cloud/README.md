@@ -9,3 +9,6 @@ Node-RED script installer (RPM based Linux ONLY)
 `bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/rpm/update-nodejs-and-nodered)`
 
 [Starting Node-RED on boot](https://nodered.org/docs/faq/starting-node-red-on-boot#rpm-based-linux-redhat-fedora-centos)
+
+[Securing node-red](https://nodered.org/docs/user-guide/runtime/securing-node-red#editor--admin-api-security)
+
