@@ -19,6 +19,7 @@ Node-RED script installer (RPM based Linux ONLY)
 - Block all ports except 1880
 ### Steps taken to secure the Node-RED
 - Enable Username and Password
+- 
 ![image](https://user-images.githubusercontent.com/74981128/150667335-0a77c411-fc9d-49d6-aad2-3031794464dd.png)
 
 
