@@ -1,0 +1,1215 @@
+[
+    {
+        "id": "054fefbf2cc36add",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6a7253a2898a387e",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "name": "Username & Password checker",
+        "style": {
+            "label": true,
+            "stroke": "#000000",
+            "color": "#000000"
+        },
+        "nodes": [
+            "38883714c7f0bc3e",
+            "95f2b7a740a5c71f",
+            "65543bc813a4bac4",
+            "ccfe3b439309fa17",
+            "7dede2fd8ccb7055",
+            "a6984b6443617b3b",
+            "da941489029b2c33",
+            "5e97eaa080697f9d"
+        ],
+        "x": 34,
+        "y": 19,
+        "w": 1092,
+        "h": 142
+    },
+    {
+        "id": "33e1d395e6886e98",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "name": "Telegram handler",
+        "style": {
+            "label": true,
+            "fill": "#7fb7df",
+            "color": "#000000",
+            "stroke": "#000000"
+        },
+        "nodes": [
+            "19827ce44a9a0071",
+            "5cfc80c790acf7d0"
+        ],
+        "x": 74,
+        "y": 459,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "42b20068215cec79",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "name": "2FA",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "5744f410999a45c4",
+            "576b71cc9562d8fa",
+            "a9e43a23585cb3fa",
+            "1340cf0dae3140ce",
+            "3158617a5f39411f",
+            "ab824da2397a0a73",
+            "a09c074d6ae5ad57",
+            "5147e47c7706b799",
+            "68e045d702109ad9",
+            "ae7b5d08a39fe89a",
+            "e351ec0631c9d97d",
+            "c9cc324644c7e61d"
+        ],
+        "x": 34,
+        "y": 173,
+        "w": 992,
+        "h": 268
+    },
+    {
+        "id": "7dd6a87a54f2e4b9",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "name": "Database Logger",
+        "style": {
+            "stroke": "#000000",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "ca74806e0aa0c19b",
+            "0847d0b120f6cd59",
+            "4a23ba0e2a1e8e14",
+            "63facb122f2148f7",
+            "d54e2f72d7908032",
+            "df1fb7111a1c82e3"
+        ],
+        "x": 34,
+        "y": 573,
+        "w": 1552,
+        "h": 214
+    },
+    {
+        "id": "e351ec0631c9d97d",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "Telegram handler",
+        "style": {
+            "label": true,
+            "fill": "#7fb7df",
+            "color": "#000000",
+            "stroke": "#000000"
+        },
+        "nodes": [
+            "0fc247ca3fe70108",
+            "7d2f39d1dbf4c7e3"
+        ],
+        "x": 374,
+        "y": 199,
+        "w": 492,
+        "h": 82
+    },
+    {
+        "id": "df1fb7111a1c82e3",
+        "type": "group",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "name": "Spike Generator",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "31519ecdcccb4866",
+            "b48269f626739d6a",
+            "6a82b8902c0e59fa",
+            "c5ab3e43966def4c",
+            "f201d1ba972c219c"
+        ],
+        "x": 694,
+        "y": 599,
+        "w": 352,
+        "h": 162
+    },
+    {
+        "id": "38883714c7f0bc3e",
+        "type": "ui_text_input",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "label": "Username",
+        "tooltip": "",
+        "group": "6ead1a0febd3d780",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "65543bc813a4bac4"
+            ]
+        ]
+    },
+    {
+        "id": "95f2b7a740a5c71f",
+        "type": "ui_text_input",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "label": "Password",
+        "tooltip": "",
+        "group": "6ead1a0febd3d780",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "password",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "ccfe3b439309fa17"
+            ]
+        ]
+    },
+    {
+        "id": "65543bc813a4bac4",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "username",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "username",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 60,
+        "wires": [
+            [
+                "7dede2fd8ccb7055"
+            ]
+        ]
+    },
+    {
+        "id": "ccfe3b439309fa17",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "password",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "password",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "7dede2fd8ccb7055"
+            ]
+        ]
+    },
+    {
+        "id": "7dede2fd8ccb7055",
+        "type": "join",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "a6984b6443617b3b"
+            ]
+        ]
+    },
+    {
+        "id": "a6984b6443617b3b",
+        "type": "function",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "func": "if (msg.username==\"lutfi\"&&msg.password==\"lutfi\"){\n    msg.authorize=\"Authorized\";\n    msg.int=1000\n}\nelse if (msg.username==\"nab\"&&msg.password==\"nab\"){\n    msg.authorize=\"Authorized\";\n    msg.int=1000\n}\nelse if (msg.username==\"val\"&&msg.password==\"val\"){\n    msg.authorize=\"Authorized\";\n    msg.int=1000\n}\nelse{\n    msg.authorize=\"Error!\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "da941489029b2c33",
+                "5e97eaa080697f9d",
+                "ae7b5d08a39fe89a"
+            ]
+        ]
+    },
+    {
+        "id": "da941489029b2c33",
+        "type": "ui_text",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "group": "6ead1a0febd3d780",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Please Enter username and password",
+        "format": "{{msg.authorize}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 950,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "5e97eaa080697f9d",
+        "type": "debug",
+        "z": "054fefbf2cc36add",
+        "g": "6a7253a2898a387e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5744f410999a45c4",
+        "type": "ui_text_input",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "label": "2FA",
+        "tooltip": "",
+        "group": "6aabc65a390c13f1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": false,
+        "className": "",
+        "topicType": "msg",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "a9e43a23585cb3fa"
+            ]
+        ]
+    },
+    {
+        "id": "576b71cc9562d8fa",
+        "type": "function",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "func": "msg.payload=Math.floor(Math.random() * msg.int)\nmsg.topic=\"2fa\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "7d2f39d1dbf4c7e3",
+                "1340cf0dae3140ce"
+            ]
+        ]
+    },
+    {
+        "id": "0fc247ca3fe70108",
+        "type": "telegram sender",
+        "z": "054fefbf2cc36add",
+        "g": "e351ec0631c9d97d",
+        "name": "",
+        "bot": "65103eab3bf5f377",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7d2f39d1dbf4c7e3",
+        "type": "function",
+        "z": "054fefbf2cc36add",
+        "g": "e351ec0631c9d97d",
+        "name": "Declare Telegram Objects",
+        "func": "var temp=msg.payload\nif (msg.username==\"lutfi\"){\n    var chatid=\n}\nelse if (msg.username==\"nab\"){\n    chatid=\n}\nelse if (msg.username==\"val\"){\n    chatid=\n}\nmsg.payload={\n    content:\"Hi \"+msg.username+\" Your 2FA key is: \"+msg.payload,\n    type:'message',\n    chatId:chatid\n   }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 9,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 240,
+        "wires": [
+            [
+                "0fc247ca3fe70108"
+            ]
+        ]
+    },
+    {
+        "id": "a9e43a23585cb3fa",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "input",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "userinput",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 360,
+        "wires": [
+            [
+                "1340cf0dae3140ce"
+            ]
+        ]
+    },
+    {
+        "id": "1340cf0dae3140ce",
+        "type": "join",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "",
+        "propertyType": "full",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 430,
+        "y": 320,
+        "wires": [
+            [
+                "3158617a5f39411f",
+                "ab824da2397a0a73"
+            ]
+        ]
+    },
+    {
+        "id": "3158617a5f39411f",
+        "type": "switch",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "property": "payload.2fa.payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "payload.userinput.payload",
+                "vt": "msg"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "a09c074d6ae5ad57"
+            ],
+            [
+                "c9cc324644c7e61d"
+            ]
+        ]
+    },
+    {
+        "id": "ab824da2397a0a73",
+        "type": "debug",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a09c074d6ae5ad57",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "open",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Authorized! Opening door",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "testTopic",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "5147e47c7706b799",
+                "68e045d702109ad9",
+                "63facb122f2148f7",
+                "cdc2a20f4ca6e296"
+            ]
+        ]
+    },
+    {
+        "id": "5147e47c7706b799",
+        "type": "debug",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 930,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "68e045d702109ad9",
+        "type": "ui_text",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "group": "6aabc65a390c13f1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 910,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ae7b5d08a39fe89a",
+        "type": "switch",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "property": "authorize",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Authorized",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Error!",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "576b71cc9562d8fa"
+            ],
+            [
+                "d54e2f72d7908032",
+                "5cfc80c790acf7d0"
+            ]
+        ]
+    },
+    {
+        "id": "ca74806e0aa0c19b",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "username",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 680,
+        "wires": [
+            [
+                "31519ecdcccb4866",
+                "b48269f626739d6a",
+                "6a82b8902c0e59fa"
+            ]
+        ]
+    },
+    {
+        "id": "0847d0b120f6cd59",
+        "type": "debug",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "4a23ba0e2a1e8e14",
+        "type": "influxdb out",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "influxdb": "a3dbbbcb7bce13b5",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "4df7d1b2e7d6e86c",
+        "bucket": "Carpark Monitoring System",
+        "x": 1350,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "63facb122f2148f7",
+        "type": "switch",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "name": "",
+        "property": "username",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "lutfi",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "val",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "nab",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "ca74806e0aa0c19b"
+            ],
+            [
+                "ca74806e0aa0c19b"
+            ],
+            [
+                "ca74806e0aa0c19b"
+            ]
+        ]
+    },
+    {
+        "id": "19827ce44a9a0071",
+        "type": "telegram sender",
+        "z": "054fefbf2cc36add",
+        "g": "33e1d395e6886e98",
+        "name": "",
+        "bot": "65103eab3bf5f377",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cfc80c790acf7d0",
+        "type": "function",
+        "z": "054fefbf2cc36add",
+        "g": "33e1d395e6886e98",
+        "name": "Declare Telegram Objects",
+        "func": "var temp=msg.payload\nmsg.payload={\n    content:\"Unknown Person trying to log in\",\n    type:'message',\n    chatId:['']\n   }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "19827ce44a9a0071"
+            ]
+        ]
+    },
+    {
+        "id": "31519ecdcccb4866",
+        "type": "delay",
+        "z": "054fefbf2cc36add",
+        "g": "df1fb7111a1c82e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 680,
+        "wires": [
+            [
+                "c5ab3e43966def4c"
+            ]
+        ]
+    },
+    {
+        "id": "b48269f626739d6a",
+        "type": "delay",
+        "z": "054fefbf2cc36add",
+        "g": "df1fb7111a1c82e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 720,
+        "wires": [
+            [
+                "f201d1ba972c219c"
+            ]
+        ]
+    },
+    {
+        "id": "6a82b8902c0e59fa",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "df1fb7111a1c82e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 640,
+        "wires": [
+            [
+                "0847d0b120f6cd59",
+                "4a23ba0e2a1e8e14"
+            ]
+        ]
+    },
+    {
+        "id": "c5ab3e43966def4c",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "df1fb7111a1c82e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 680,
+        "wires": [
+            [
+                "4a23ba0e2a1e8e14",
+                "0847d0b120f6cd59"
+            ]
+        ]
+    },
+    {
+        "id": "f201d1ba972c219c",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "df1fb7111a1c82e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 720,
+        "wires": [
+            [
+                "4a23ba0e2a1e8e14",
+                "0847d0b120f6cd59"
+            ]
+        ]
+    },
+    {
+        "id": "d54e2f72d7908032",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "7dd6a87a54f2e4b9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "measurement",
+                "pt": "msg",
+                "to": "Unkown",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 640,
+        "wires": [
+            [
+                "6a82b8902c0e59fa",
+                "31519ecdcccb4866",
+                "b48269f626739d6a"
+            ]
+        ]
+    },
+    {
+        "id": "cdc2a20f4ca6e296",
+        "type": "mqtt out",
+        "z": "054fefbf2cc36add",
+        "name": "door",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d54a40aba0a56785",
+        "x": 1190,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c9cc324644c7e61d",
+        "type": "change",
+        "z": "054fefbf2cc36add",
+        "g": "42b20068215cec79",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "open",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Unauthorized! Wrong 2FA",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 340,
+        "wires": [
+            [
+                "68e045d702109ad9"
+            ]
+        ]
+    },
+    {
+        "id": "15fdb761498cabad",
+        "type": "mqtt in",
+        "z": "054fefbf2cc36add",
+        "name": "",
+        "topic": "TestTopic",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "d54a40aba0a56785",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1220,
+        "y": 200,
+        "wires": [
+            [
+                "2295f34f8b59b862"
+            ]
+        ]
+    },
+    {
+        "id": "2295f34f8b59b862",
+        "type": "debug",
+        "z": "054fefbf2cc36add",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "5df752c42c5447b3",
+        "type": "inject",
+        "z": "054fefbf2cc36add",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "testTopic",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1010,
+        "y": 480,
+        "wires": [
+            [
+                "cdc2a20f4ca6e296"
+            ]
+        ]
+    },
+    {
+        "id": "6ead1a0febd3d780",
+        "type": "ui_group",
+        "name": "Carpark System",
+        "tab": "71a54d0c4645ed4e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6aabc65a390c13f1",
+        "type": "ui_group",
+        "name": "2FA",
+        "tab": "71a54d0c4645ed4e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "65103eab3bf5f377",
+        "type": "telegram bot",
+        "botname": "CIOT BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "a3dbbbcb7bce13b5",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "86941d32c6c0affc",
+        "influxdbVersion": "2.0",
+        "url": "https://ap-southeast-2-1.aws.cloud2.influxdata.com",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "d54a40aba0a56785",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c689cd9ab0cf406bbc142988277304d9.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "86941d32c6c0affc",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "71a54d0c4645ed4e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "86941d32c6c0affc",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    }
+]
