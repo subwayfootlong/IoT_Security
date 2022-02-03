@@ -1,0 +1,61 @@
+[
+    {
+        "id": "cdec2663f2a4d2ec",
+        "type": "telegram sender",
+        "z": "891ff44c6993e433",
+        "g": "8ba9b86289ad48b2",
+        "name": "",
+        "bot": "65103eab3bf5f377",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3296fdf98174abdc",
+        "type": "function",
+        "z": "891ff44c6993e433",
+        "g": "8ba9b86289ad48b2",
+        "name": "Declare Telegram Objects",
+        "func": "var temp=msg.payload\nmsg.payload={\n    content:\"Unknown Person trying to log in\", // Your message body\n    type:'message',\n    chatId:['']//Your Telegram Chat ID\n   }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "cdec2663f2a4d2ec"
+            ]
+        ]
+    },
+    {
+        "id": "65103eab3bf5f377",
+        "type": "telegram bot",
+        "botname": "CIOT BOT",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]
