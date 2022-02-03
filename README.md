@@ -8,3 +8,8 @@ module hello world
 - 20 Node-RED online server Live
 - 21 Node-RED to InfluxDB SSL connection Live
 - 22 Telegram Notification Live
+- 26 Node-RED password secured
+- 28 2FA function live
+
+### Febuary 2022
+- 1 Version 1.0 Live
