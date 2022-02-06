@@ -6,8 +6,8 @@ This section covers the main program that is using the programming environment, 
 ## Security
 ### Steps taken to secure the vm:
 - SSH key required to access VM
-- Block all ports except 1880
 ![image](https://user-images.githubusercontent.com/74981128/150664690-6329731f-f6e3-4614-bf25-96fd13d95c4e.png)
+- Block all ports except 1880
 ### Steps taken to secure the Node-RED
 - Enable Username and Password login
 
