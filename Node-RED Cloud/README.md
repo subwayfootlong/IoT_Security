@@ -10,6 +10,7 @@ This section covers the main program that is using the programming environment, 
 ![image](https://user-images.githubusercontent.com/74981128/150664690-6329731f-f6e3-4614-bf25-96fd13d95c4e.png)
 ### Steps taken to secure the Node-RED
 - Enable Username and Password login
+
 ![image](https://user-images.githubusercontent.com/74981128/150667335-0a77c411-fc9d-49d6-aad2-3031794464dd.png)
 
 
