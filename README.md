@@ -1,5 +1,14 @@
 # IoT_Security
-module hello world
+This repository covers a project required by a module named IoT security, which focuses on using IoT technologies securely.
+
+## Folders
+| Files | Description |  
+| ----------- | ----------- |  
+| Node-RED Cloud | Cloud hosted Node-RED instance to process and input data |  
+| Notification | Node-RED to telegram for notification and 2 factor Authentication |
+| Transmit | Connecting Node-MCU to HiveMQ securely |
+| Visualize | Node-RED to InfluxDB cloud to visualize the entry timing of users |
+
 
 ## Change Log
 ### January 2022
