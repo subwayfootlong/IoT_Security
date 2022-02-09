@@ -37,14 +37,24 @@ This folder is meant for connecting the microcontroller, Node-MCU to HiveMQ secu
 
 # Uploading the certificates to the board
 ## LittleFS Filesystem Uploader
+LittleFS Filesystem Uploader is an Arduino plugin which compile sketch data folder into LittleFS filesystem image and then uploads the image to ESP8266 flash memory.
+
+### Steps to install the plugin
 1. Download the zip folder ESP8266LittleFS-2.6.0. 
 2. Go to Arduino IDE directory and open the tools folder
 3. Unzip the folder, copy and paste it into the Arduino IDE tools folder
 4. Restart Arduino IDE and ESP8266 LittleFS Data Upload will appear on the tools bar.
 
-## Generating the certificates
+
+# Generating the certificates
+## Using OpenSSL
 We are using OpenSSL to generate the certificates. OpenSSL is a common open-source command line tool to generate SSL/TLS certificates, private keys and identify certificate information. It is also used for general-purpose cryptography and to secure communication. It is free to get and can be used for commercial and non-commercial purposes as it is licensed under an Apache-style license.
 
+## Getting the certificates that are needed for an encrypted connection to HiveMQ Cloud
+### Steps
+1. We will generate the certificate in Python IDE and we will execute the Python script. A file will be generated containing the certificates.
+2. We move the file into the directory of Arduino IDE sketch. 
+3. We then open Arduino IDE and open Tools>ESP8266 LittleFS Data Upload and this will upload the files into the board's flash memory.
 
 ## Guide ar.exe and openssl
 Install the ESP8266 Board for Arduino using this guide: http://arduino.esp8266.com/Arduino/versions/2.0.0/doc/installing.html
