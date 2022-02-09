@@ -7,9 +7,9 @@
 #include <CertStoreBearSSL.h>
 
 // Update these with values suitable for your network.
-const char* ssid = "Lais 12 (2)";
-const char* password = "deeznuts";
-const char* mqtt_server = "c689cd9ab0cf406bbc142988277304d9.s1.eu.hivemq.cloud";
+const char* ssid = "";
+const char* password = "";
+const char* mqtt_server = "";//your hiveMQ Server
 
 // A single, global CertStore which can be used by all connections.
 // Needs to stay live the entire time any of the WiFiClientBearSSLs
