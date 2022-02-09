@@ -1,4 +1,5 @@
-This folder is for transmiting data from ESP8266 to HiveMQ
+This folder is meant for connecting the microcontroller, Node-MCU to HiveMQ securely with certificates
+
 # Connecting to HiveMQ Securely (with certificates)
 ## Components used to connect the microcontroller, ESP8266 Arduino to HiveMQ 
 - NodeMCU (an ESP8266 board)
