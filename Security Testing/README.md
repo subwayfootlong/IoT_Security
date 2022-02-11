@@ -10,4 +10,4 @@ We followed this [guide](https://www.cypressdatadefense.com/blog/how-to-do-secur
 | ----------- | ----------- |  
 | Node-RED flow screen was unprotected |  Setup Login to acess Node-RED screen |
 | We tried the common passwords and was able to get into the Node-RED flow screen | Change the password to include special characters and numbers |
-| No limit to wrong password. Attackers can try to log in multiple times without the website blocking them | Notify admin when a wrong login takes place. Admin can then block that IP via oracle cloud VM console |
+| No limit to wrong password in User Interface. Attackers can try to log in multiple times without the website blocking them | Notify admin when a wrong login takes place. Admin can then block that IP via oracle cloud VM console |
