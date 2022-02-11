@@ -13,6 +13,8 @@ This section covers the main program that is using the programming environment, 
 
 ![image](https://user-images.githubusercontent.com/74981128/150667335-0a77c411-fc9d-49d6-aad2-3031794464dd.png)
 
+Node-RED can be configured to use TLS however, this is a challenge as we are using a Virtual Machine and generating and uploading the certificates in that Virtual machine is not so straight forward. 
+[Guide to create secure certificates](https://it.knightnet.org.uk/kb/nr-qa/https-valid-certificates/)
 
 # Guides:
 [Guide to get Node-RED on Cloud(FREE)](https://www.youtube.com/watch?v=TaVXyR4S2Qo)
