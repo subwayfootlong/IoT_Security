@@ -56,6 +56,10 @@ We are using OpenSSL to generate the certificates. OpenSSL is a common open-sour
 2. We move the file into the directory of Arduino IDE sketch. 
 3. We then open Arduino IDE and open Tools>ESP8266 LittleFS Data Upload and this will upload the files into the board's flash memory.
 
+# Connecting MQTT Clients
+We will execute the code on Arduino IDE to connect to our HiveMQ Cloud. The code will create an MQTT client that will publish and subscribe to a topic on our HiveMQ Cloud cluster.
+
+
 ## Guide ar.exe and openssl
 Install the ESP8266 Board for Arduino using this guide: http://arduino.esp8266.com/Arduino/versions/2.0.0/doc/installing.html
 
