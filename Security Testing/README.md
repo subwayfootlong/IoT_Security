@@ -36,7 +36,7 @@ The purpose of TR64-2018 standard is a guideline to safeguard our Internet of Th
        
        Users login with their respective username and password. They will then receive their 2FA to input into the Node-Red Cloud User Interface.
 
-## Attack Surface 3: ESP32
+## Attack Surface 3: ESP8266
 **Checklist:**
 - TR64: RS-03
     - Secure Communications
