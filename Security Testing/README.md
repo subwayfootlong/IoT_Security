@@ -24,8 +24,10 @@ Checklist:
       We generate certificates that are needed for an encrypted connection to the MQTT broker, HiveMQ Cloud. The self signed certificates to implement SSL uses X.509 Certificate
       Authority. User credentials like password are not saved in plaintext.
 
-- TR64: RS-03
+- TR64: RS-03 (System should be able to withstand malicious attacks such DDoS)
     - Data sent over secure protocols
+
+      We serve the Web Application using HTTPS protocol which is more secure than HTTP.
       
 ## Attack Surface 2: Web Server
 Checklist:
