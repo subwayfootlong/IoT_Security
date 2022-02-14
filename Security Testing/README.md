@@ -18,13 +18,17 @@ The purpose of TR64-2018 standard is a guideline to safeguard our Internet of Th
 
 ## Attack Surface 1: Web Application 
 Checklist:
-- TR64: IA-01
-    - Client and server credentials are stored securely for example; hashed or encrypted
-      
+- TR64: IA-01 (Client and server credentials are stored securely for example; hashed or encrypted)
+    - Certificates for encrypted connection to broker
+    
       We generate certificates that are needed for an encrypted connection to the MQTT broker, HiveMQ Cloud. The self signed certificates to implement SSL uses X.509 Certificate
       Authority. User credentials like password are not saved in plaintext.
 
 - TR64: RS-03
     - Data sent over secure protocols
       
-
+## Attack Surface 1: Web Server
+Checklist:bro
+- TR64: AP-02 (Multi-factor authentication should be employed for impactful operations)
+    - Secure login using 2FA 
+       
