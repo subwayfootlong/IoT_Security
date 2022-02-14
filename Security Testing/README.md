@@ -27,8 +27,9 @@ Checklist:
 - TR64: RS-03
     - Data sent over secure protocols
       
-## Attack Surface 1: Web Server
-Checklist:bro
+## Attack Surface 2: Web Server
+Checklist:
 - TR64: AP-02 (Multi-factor authentication should be employed for impactful operations)
     - Secure login using 2FA 
        
+       Users login with their respective username and password. They will then receive their 2FA to input into the Node-Red Cloud User Interface.
