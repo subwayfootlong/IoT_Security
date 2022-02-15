@@ -58,8 +58,3 @@ We are using OpenSSL to generate the certificates. OpenSSL is a common open-sour
 
 # Connecting MQTT Clients
 We will execute the code on Arduino IDE to connect to our HiveMQ Cloud. The code will create an MQTT client that will publish and subscribe to a topic on our HiveMQ Cloud cluster.
-
-## Guide ar.exe and openssl
-Install the ESP8266 Board for Arduino using this guide: http://arduino.esp8266.com/Arduino/versions/2.0.0/doc/installing.html
-
-OpenSLL configuration https://www.openssl.org
