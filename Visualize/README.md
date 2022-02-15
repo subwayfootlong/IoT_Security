@@ -1,7 +1,7 @@
 # Visualize
 This folder covers the visualisation function of our project
 
-We used influxdb cloud for our visualization as it is a free cloud service, is secure and has both a visulization and database.
+We used InfluxDB Cloud for our visualization as it is a free cloud service, is secure and has both a visulization and database.
 
 ## Security
 <!-- InfluxDB cloud is secure as it has a token system and also [Secured Sockets Layer](https://docs.influxdata.com/influxdb/v2.1/security/enable-tls/) (SSL). -->
