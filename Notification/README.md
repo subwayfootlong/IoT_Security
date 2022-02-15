@@ -52,7 +52,3 @@ Client-Server communication is protected from MiTM-attacks during DH key generat
 
 ## Hash collisions for Diffie-Hellman Keys
 Currently, the fingerprint uses 128-bits of SHA-1 concatenated with 160 bits from the SHA-256 of the key, yielding a total of 288 fingerprint bits, thus negating the possibility of hash-collision attacks.
-
-https://telegram.org/faq#q-how-secure-is-telegram
-https://telegram.org/faq#q-so-how-do-you-encrypt-data
-https://core.telegram.org/techfaq
